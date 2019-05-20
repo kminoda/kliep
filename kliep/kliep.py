@@ -2,12 +2,11 @@ import numpy as np
 import matplotlib.pylab as plt
 
 class SequentialDensityRatioEstimator:
-    def __init__(self,y,n_rf,n_te,dt,k,eta,lam,mu):
+    def __init__(self,y,n_rf,n_te,k,eta=0.1,lam=0.1,mu=0.01):
         self.y = y
         self.n_rf = n_rf
         self.n_te = n_te
         self.k = k
-        self.dt = dt
         self.eta = eta
         self.lam = lam
         self.mu = mu

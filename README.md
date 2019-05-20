@@ -7,5 +7,7 @@ Based on Direct Density-Ratio Estimation](http://www.ms.k.u-tokyo.ac.jp/2012/CDK
 ```python
 from kliep import SequentialDensityRatioEstimator 
 
-sdre = SequentialDensityRatioEstimator()
+sdre = SequentialDensityRatioEstimator(y,n_rf,n_te,k)
+for new_data in new_data_set:
+    sdre(new_data)
 ```
